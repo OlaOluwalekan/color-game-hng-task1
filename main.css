@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: DigitalMono;
+  src: url('./font/digital-7-mono.ttf');
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: 'Poppins', serif;
+  font-weight: 400;
+}
+
+.splash-screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-family: 'Oi', serif;
+  font-size: xx-large;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  background-color: #1a1a1a;
+}
+
+.splash-screen section {
+  max-width: 90%;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-screen section article {
+  display: flex;
+  gap: 10px;
+}
+
+main {
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#colorBox {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  display: none;
+}
+
+.colorOption {
+  width: 100px;
+  aspect-ratio: 1;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+#gameStatus {
+  margin: 20px;
+  color: red;
+  font-weight: bold;
+  display: flex;
+  gap: 5px;
+}
+
+#gameStatus article {
+  width: 20px;
+  aspect-ratio: 1;
+}
+
+#newGameButton {
+  padding: 10px 30px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+}
+
+#newGameButton:hover {
+  background-color: darkgreen;
+}
+
+.lives {
+  font-size: 20px;
+}
+
+.score {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.score span {
+  font-family: DigitalMono;
+  font-size: 36px;
+}
