@@ -16,6 +16,7 @@ body {
   text-align: center;
   font-family: 'Poppins', serif;
   font-weight: 400;
+  background-color: #1a1a1a;
 }
 
 .splash-screen {
@@ -55,6 +56,13 @@ main {
   align-items: center;
   background-color: #1a1a1a;
   color: white;
+  max-width: 600px;
+  margin: auto;
+}
+
+#gameInstructions {
+  width: 90%;
+  margin: auto;
 }
 
 #colorBox {
